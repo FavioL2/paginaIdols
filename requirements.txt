@@ -1,0 +1,6 @@
+flask
+pymongo
+bson
+flask_cors
+bs4
+gunicorn
