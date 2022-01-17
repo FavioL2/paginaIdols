@@ -6,11 +6,11 @@ from werkzeug.utils import redirect
 from flask_cors import CORS
 from bson.json_util import dumps
 from bson.objectid import ObjectId
-
+import os
 
 app = Flask(__name__)
 CORS(app)
-client = MongoClient("mongodb+srv://admin:admin@dportenis.sx1nl.mongodb.net/Cartitas") #se usó la linea de conexión a atlas por si lo prueba, así no tiene que inyectar codigo o escribir mucho
+client = MongoClient(os.environ['db']) #se usó la linea de conexión a atlas por si lo prueba, así no tiene que inyectar codigo o escribir mucho
 db = client.Cartitas #seleccionamos la db Cartitas
 
 @app.route("/")#la pagina principal
