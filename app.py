@@ -10,6 +10,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
+print(os.environ['db'])
 client = MongoClient(os.environ['db']) #se usó la linea de conexión a atlas por si lo prueba, así no tiene que inyectar codigo o escribir mucho
 db = client.Cartitas #seleccionamos la db Cartitas
 
