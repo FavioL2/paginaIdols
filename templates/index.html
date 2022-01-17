@@ -45,7 +45,7 @@
                 
                 html += ` <a href={{url_for('carta', nombreCarta= '')}}`+(element['nombreCarta']).replaceAll(" ","&")+` onclick="enviar('${element["nombreCarta"]}')" id-data="${element['_id']}" style="color: inherit; text-decoration: inherit; " ><div class="cajita">
                     <p>${element['nombreCarta']}</p>
-                    <img src="${element['img']}" style="width:40%;display:block;">
+                    <img src="${element['img']}" style="width:40%;display:block;"alt="${element['personaje']}">
                     <h3>${element['personaje']}</h3>
                     <table >
                         <tr>
