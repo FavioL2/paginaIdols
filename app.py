@@ -8,6 +8,7 @@ from bson.json_util import dumps
 from bson import ObjectId
 
 app = Flask(__name__)
+CORS(app)
 client = MongoClient("mongodb+srv://admin:admin@dportenis.sx1nl.mongodb.net/Cartitas") #se usó la linea de conexión a atlas por si lo prueba, así no tiene que inyectar codigo o escribir mucho
 db = client.Cartitas #seleccionamos la db Cartitas
 
