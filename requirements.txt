@@ -3,3 +3,4 @@ gunicorn
 pymongo
 flask_cors
 bs4
+pymongo[srv]
