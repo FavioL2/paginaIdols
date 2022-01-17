@@ -109,4 +109,4 @@ def borrar(id):
         nombre= (db.Idols.find_one({'_id':ObjectId(id)}))['nombreCarta']
         return redirect(url_for('carta',nombreCarta= nombre))#en caso de tener un problema con el delete, lo dejamos en la misma pagina
 if __name__ =="__main__":
-        app.run(host="0.0.0.0",port=5000, debug=True)
+        app.run()
