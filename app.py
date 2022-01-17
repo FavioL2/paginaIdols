@@ -5,7 +5,8 @@ from pymongo import MongoClient
 from werkzeug.utils import redirect
 from flask_cors import CORS
 from bson.json_util import dumps
-from bson import ObjectId
+from bson.objectid import ObjectId
+
 
 app = Flask(__name__)
 CORS(app)
